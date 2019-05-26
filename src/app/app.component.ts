@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myProject';
+
+  demoBinding = false;
+
+  onChangeFontSize() {
+    this.demoBinding = !this.demoBinding;
+  }
 }

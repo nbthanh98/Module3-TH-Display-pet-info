@@ -1,0 +1,17 @@
+<table>
+    <tr>
+        <th>Pet Name: </th>
+        <td><input type="text" (keyup.enter)="updateName(petname)" [value]="petname" (change)="petname = $event.target.value"></td>
+    </tr>
+    <tr>
+        <th>Pet IMG </th>
+        <td>
+            <input [value]="petUrl" (keyup.enter)="updatePetIMG()" (change)="petUrl = $event.target.value">
+        </td>
+    </tr>
+
+    <br>
+
+    <h3>Pet Name: {{petname}} </h3>
+    <img [src]="petUrl" alt="" style="width: 500px; height: 300px;">
+</table>

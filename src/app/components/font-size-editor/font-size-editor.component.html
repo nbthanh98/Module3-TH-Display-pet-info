@@ -1,0 +1,10 @@
+<table>
+    <tr>
+        <th>FirstName:</th>
+        <td><input type="text" [value]="firstName" (input)="firstName = $event.target.value"></td>
+        <td><button (click)="onClick()">Change</button></td>
+    </tr>
+    <tr>
+        <p>{{firstName}}</p>
+    </tr>
+</table>
